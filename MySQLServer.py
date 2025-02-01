@@ -21,6 +21,6 @@ try:
     mydb.close()
     print("Database connection closed.")
 
-except Exception as e:
+except mysql.connector.Error as e:
         print(f"Error: {e}")
 
